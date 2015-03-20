@@ -1,0 +1,110 @@
+[
+{
+  "fields": {
+    "boston_temp": "2",
+    "houston_temp": "1",
+    "month": 1
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 1
+},
+{
+  "fields": {
+    "boston_temp": "1",
+    "houston_temp": "1",
+    "month": 2
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 2
+},
+{
+  "fields": {
+    "boston_temp": "3",
+    "houston_temp": "2",
+    "month": 3
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 3
+},
+{
+  "fields": {
+    "boston_temp": "3",
+    "houston_temp": "5",
+    "month": 4
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 4
+},
+{
+  "fields": {
+    "boston_temp": "4",
+    "houston_temp": "3",
+    "month": 5
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 5
+},
+{
+  "fields": {
+    "boston_temp": "8",
+    "houston_temp": "5",
+    "month": 6
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 6
+},
+{
+  "fields": {
+    "boston_temp": "3",
+    "houston_temp": "4",
+    "month": 7
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 7
+},
+{
+  "fields": {
+    "boston_temp": "6",
+    "houston_temp": "5",
+    "month": 8
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 8
+},
+{
+  "fields": {
+    "boston_temp": "1",
+    "houston_temp": "3",
+    "month": 9
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 9
+},
+{
+  "fields": {
+    "boston_temp": "2",
+    "houston_temp": "1",
+    "month": 10
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 10
+},
+{
+  "fields": {
+    "boston_temp": "1",
+    "houston_temp": "3",
+    "month": 11
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 11
+},
+{
+  "fields": {
+    "boston_temp": "0",
+    "houston_temp": "0",
+    "month": 12
+  },
+  "model": "core.monthlyweatherbycity",
+  "pk": 12
+}
+]

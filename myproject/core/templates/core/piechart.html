@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block chart %}
+  {% load chartit %}
+  {{ weatherchart|load_charts:"container" }}
+{% endblock chart %}
+
+{% block content %}
+  <div id="container"> Chart will be rendered here {{ weatherchart|load_charts:"container" }}</div>
+  <div id="graph"></div>
+{% endblock content %}
