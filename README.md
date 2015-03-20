@@ -1,6 +1,6 @@
 # chartit
 
-Example usage django-chartit.
+Example usage [django-chartit][0].
 
 *Django 1.7 e Python 2.7*
 
@@ -24,3 +24,5 @@ Example usage django-chartit.
 Fonte: http://stackoverflow.com/a/25839210/802542
 
 	$ python manage.py runserver
+
+[0]: https://github.com/pgollakota/django-chartit/
