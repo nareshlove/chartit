@@ -25,4 +25,24 @@ Fonte: http://stackoverflow.com/a/25839210/802542
 
 	$ python manage.py runserver
 
+## Screenshots
+
+linechart
+
+![linechart](img/linechart.png)
+
+piechart
+
+![piechart](img/piechart.png)
+
+multiplechart
+
+![multiplechart](img/multiplechart.png)
+
+combinationchart
+
+![combinationchart](img/combinationchart.png)
+
+
+
 [0]: https://github.com/pgollakota/django-chartit/
