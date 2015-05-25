@@ -5,7 +5,7 @@ from myproject.core.views import *
 urlpatterns = patterns(
     'myproject.core.views',
     url(r'^$', 'index', name='index'),
-    url(r'^linechart/$', MyTemplateView.as_view(), name='linechart'),
+    url(r'^linechart/$', LineChartView.as_view(), name='linechart'),
     url(r'^piechart/$', 'piechart', name='piechart'),
     url(r'^multiplechart/$', 'multiplechart', name='multiplechart'),
     url(r'^combinationchart/$', 'combinationchart', name='combinationchart'),

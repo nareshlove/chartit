@@ -4,10 +4,6 @@ from django.views.generic import TemplateView
 from chartit import DataPool, Chart
 from .models import MonthlyWeatherByCity
 
-# http://stackoverflow.com/a/25839210/802542
-
-# http://stackoverflow.com/questions/30405236/transform-function-view-in-class-based-view-django-chartit
-
 
 def index(request):
     return render(request, "index.html")
@@ -21,7 +17,7 @@ def about(request):
     return render(request, "about.html")
 
 
-class MyTemplateView(TemplateView):
+class LineChartView(TemplateView):
     template_name = 'core/linechart.html'
 
     def get_ds(self):
@@ -35,7 +31,7 @@ class MyTemplateView(TemplateView):
             ])
 
     def get_water_chart(self):
-        Chart(
+        return Chart(
             datasource=self.get_ds(),
             series_options=[{'options': {
                 'type': 'line',
@@ -56,36 +52,6 @@ class MyTemplateView(TemplateView):
         context['weatherchart'] = self.get_water_chart()
 
         return context
-
-'''
-def linechart(request):
-    ds = DataPool(
-        series=[{'options': {
-            'source': MonthlyWeatherByCity.objects.all()},
-            'terms': [
-            'month',
-            'houston_temp',
-            'boston_temp']}
-        ])
-
-    cht = Chart(
-        datasource=ds,
-        series_options=[{'options': {
-            'type': 'line',
-            'stacking': False},
-            'terms': {
-            'month': [
-                'boston_temp',
-                'houston_temp']
-        }}],
-        chart_options={'title': {
-            'text': 'Weather Data of Boston and Houston'},
-            'xAxis': {
-            'title': {
-                'text': 'Month number'}}})
-
-    return render_to_response('core/linechart.html', {'weatherchart': cht})
-'''
 
 
 def piechart(request):
@@ -187,3 +153,6 @@ def combinationchart(request):
         x_sortf_mapf_mts=[(None, monthname, False),
                           (None, monthname, False)])
     return render_to_response('core/multiplechart.html', {'weatherchart': cht})
+
+# http://stackoverflow.com/a/25839210/802542
+# http://stackoverflow.com/questions/30405236/transform-function-view-in-class-based-view-django-chartit
